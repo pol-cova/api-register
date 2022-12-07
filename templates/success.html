@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/scss.css') }}" type="text/css">
+    <title>Succes!</title>
+</head>
+<body>
+    <div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+    <h1>Hi <span class="errorcode">@{{ name }}</span></h1>
+    <p class="output">Welcome to your new favorite place DeepBlur</p>
+    <p class="output">We send a email with full information, enjoy our platform!<a href="javascript: history.go(-1)">go back</a> or <a href="/">register now!</a>.</p>
+    <p class="output">You have a place in deepblur.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Important files for app configuration
+/resources
+.env
+config.cfg
+/config
