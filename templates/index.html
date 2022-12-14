@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="img">
-            <img src="./main-img.png" alt="unDraw.co">
+            <img src="{{url_for('static', filename='img/main-img.png')}}" alt="unDraw.co">
         </div>
         <div class="login-container">
             <form class="form-login" action="{{ url_for('api_register') }}" method="post">
@@ -50,7 +50,7 @@
             </ul>
         </div>
         <div class="row">
-            INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+            DeepBlur 2022 | PM-Interactive
         </div>
     </div>
 </footer>
