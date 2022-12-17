@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <script src="https://kit.fontawesome.com/c0078485ae.js" crossorigin="anonymous"></script>
+    <!--{{ url_for('static', filename='css/style.css') }}-->
+    <title>DeepBlur</title>
+</head>
+<!--https://undraw.co/-->
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="{{url_for('static', filename='img/support.png')}}" alt="unDraw.co">
+        </div>
+        <div class="login-container">
+            <form class="form-login" action="{{ url_for('request_support') }}" method="post">
+                <h3>Hey why you are here :( ? </h3>
+                <h2>DeepBlur</h2>
+                <a>Please tell us how can We help you?</a>
+                <div class="input-div one">
+                    <div>
+                        <label>Name</label>
+                        <input name="name" class="input-n" type="text">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="div">
+                        <label>Error (context) </label>
+                        <input name="error" class="input-m" type="text">
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Send">
+                <a href="#">Terms and conditions</a>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            DeepBlur 2022 | PM-Interactive
+        </div>
+    </div>
+</footer>
+</html>
